@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { ShoppingBag, Search, Menu, X, ChevronDown, ArrowUpRight } from 'lucide-react';
 import { AnnouncementBar } from './AnnouncementBar';
 import { MobileDrawer } from './MobileDrawer';
+import logoImg from '../../assets/logo.png';
 
 interface HeaderProps {
   cartItemCount?: number;
@@ -73,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
               {/* Brand Logo with fresh green badge */}
               <Link to="/" className="flex items-center gap-2.5 group">
                 <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200/80 p-1 flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300">
-                  <img src="/favicon.png" alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
+                  <img src={logoImg} alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-sans text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-emerald-700 transition-colors leading-none">

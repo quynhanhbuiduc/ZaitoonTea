@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Award, ShieldCheck, Truck, Clock } from 'lucide-react';
+import logoImg from '../../assets/logo.png';
 
 export const Footer: React.FC = () => {
   return (
@@ -55,7 +56,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200/80 p-1 flex items-center justify-center shadow-xs">
-                <img src="/favicon.png" alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
+                <img src={logoImg} alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-sans text-xl font-extrabold tracking-tight text-slate-900">
                 ZAITOON<span className="text-emerald-600 ml-1">TEA</span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { X, Phone, MapPin, Mail, ChevronRight } from 'lucide-react';
+import logoImg from '../../assets/logo.png';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -37,7 +38,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
         <div className="flex items-center justify-between p-4 border-b border-slate-100 bg-emerald-50/50">
           <Link to="/" onClick={onClose} className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-200/80 p-0.5 flex items-center justify-center shadow-xs">
-              <img src="/favicon.png" alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
+              <img src={logoImg} alt="Zaitoon Tea Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-sans text-base font-extrabold text-slate-900 leading-none">
