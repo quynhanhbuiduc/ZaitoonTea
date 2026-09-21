@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { ToastProvider } from './context/ToastContext';
 import { Layout } from './components/layout/Layout';
@@ -16,7 +16,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ToastProvider>
         <CartProvider>
           <Routes>
@@ -34,7 +34,7 @@ export const App: React.FC = () => {
           </Routes>
         </CartProvider>
       </ToastProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

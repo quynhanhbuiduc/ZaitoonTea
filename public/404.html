@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <title>ZAITOON TEA • Chuyển hướng</title>
+    <script>
+      var path = window.location.pathname;
+      var base = '/ZaitoonTea/';
+      if (path.startsWith(base)) {
+        var sub = path.slice(base.length);
+        if (sub && sub !== '404.html') {
+          window.location.replace(base + '#/' + sub + window.location.search + window.location.hash);
+        } else {
+          window.location.replace(base);
+        }
+      } else {
+        window.location.replace('/ZaitoonTea/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Đang chuyển hướng...</p>
+  </body>
+</html>
